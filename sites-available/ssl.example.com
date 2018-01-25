@@ -30,10 +30,10 @@ server {
 
   # listen [::]:443 ssl http2 accept_filter=dataready;  # for FreeBSD
   # listen 443 ssl http2 accept_filter=dataready;  # for FreeBSD
-  # listen [::]:443 ssl http2 deferred;  # for Linux
-  # listen 443 ssl http2 deferred;  # for Linux
-  listen [::]:443 ssl http2;
-  listen 443 ssl http2;
+  listen [::]:443 ssl http2 deferred;  # for Linux
+  listen 443 ssl http2 deferred;  # for Linux
+  # listen [::]:443 ssl http2;
+  # listen 443 ssl http2;
 
   # The host name to respond to
   server_name example.com;
